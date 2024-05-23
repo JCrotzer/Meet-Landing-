@@ -1,0 +1,417 @@
+:root {
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(0, 10%, 79%);
+  --light-blue: hsl(197, 100%, 50%);
+  --darker-blue: hsl(192, 45%, 43%);
+  --purple: hsl(279, 29%, 58%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background: var(--light-grayish-blue);
+}
+
+main {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 2em auto;
+  overflow-x: hidden;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 2.5rem;
+  padding-top: 2em;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero1 {
+  width: 45%;
+  height: 45%;
+}
+
+.hero2 {
+  width: 45%;
+  height: 45%;
+}
+
+.ad-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2.8rem;
+  margin: 1em 1.2em 0.5em 1.2em;
+}
+
+.chat-info {
+  color: grey;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 3.5em 2.5em 3.5em;
+}
+
+.info-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download {
+  width: 11rem;
+  height: 3.1rem;
+  border-radius: 1.56rem;
+  border: none;
+  background: var(--darker-blue);
+  margin-bottom: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+span {
+  color: var(--light-blue);
+  font-weight: 800;
+}
+
+.ad-info {
+  width: 130px;
+  height: 50px;
+  border-radius: 1.56rem;
+  border: none;
+  background: var(--purple);
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.one,
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  border-right: 1px solid var(--lightgray);
+  height: 100px;
+  margin-top: 2em;
+}
+
+.number-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: gray;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--lightgray);
+  border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: gray;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--lightgray);
+  background: var(--white);
+  border-radius: 50%;
+  margin-bottom: -1.5em;
+  z-index: 1;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.first-img,
+.second-img,
+.third-img,
+.fourth-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 0 3em;
+}
+
+h3 {
+  color: var(--darker-blue);
+  text-transform: uppercase;
+  margin-top: 3em;
+  letter-spacing: 0.2rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.app-info p {
+  text-align: center;
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.experience::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darker-blue);
+  opacity: 0.8;
+}
+
+.mobile-footer-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.desktop-footer-img,
+.tablet-footer-img {
+  display: none;
+}
+
+.experience-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: top;
+  gap: 2.2rem;
+  padding: 0 2.6em;
+  text-align: center;
+}
+
+.exp-title {
+  color: var(--white);
+  font-size: 1.8rem;
+  text-transform: none;
+  margin-top: -0.04em;
+}
+
+.experience-info p {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.3em;
+}
+
+.download2 {
+  width: 11rem;
+  height: 3.1rem;
+  border-radius: 1.56rem;
+  border: none;
+  background: var(--purple);
+}
+
+.version {
+  color: var(--lightgray);
+}
+
+@media (min-width: 37.5rem) and (max-width: 62rem) {
+  .info-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .download,
+  .ad-info {
+    margin-bottom: 0;
+  }
+
+  .ad-content {
+    margin: auto 3em;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: auto 3.5em;
+    line-height: 3rem;
+  }
+
+  .app-info p {
+    font-size: 1.3rem;
+    margin: auto 1.5em 2em 1.5em;
+  }
+
+  .mobile-footer-img,
+  .desktop-footer-img {
+    display: none;
+  }
+
+  .tablet-footer-img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-info {
+    position: absolute;
+    padding: 0 3.5em 1em 3.5em;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .exp-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 0 1.5em;
+    margin-top: 1.5em;
+    line-height: 1.2em;
+  }
+}
+
+@media (min-width: 62rem) {
+  .mobile-footer-img,
+  .tablet-footer-img {
+    display: none;
+  }
+
+  .desktop-footer-img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 470px;
+  }
+
+  .ad-content {
+    width: 38%;
+    margin-top: -325px;
+    gap: 1.3rem;
+  }
+
+  .info-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .ad-info {
+    margin-top: 2.2em;
+  }
+
+  .chat-info {
+    margin: 0 1.5em 0em 1.5em;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+
+  .app-info {
+    width: 46%;
+  }
+
+  .experience-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .experience-info p {
+    text-align: start;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    width: 33%;
+  }
+
+  .exp-title {
+    width: 30%;
+    text-align: start;
+  }
+}
