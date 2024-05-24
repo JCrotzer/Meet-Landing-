@@ -287,6 +287,10 @@ h2 {
 }
 
 @media (min-width: 37.5rem) and (max-width: 62rem) {
+  main {
+    margin: 5em auto 0 auto;
+  }
+
   .info-buttons {
     display: flex;
     flex-direction: row;
@@ -348,6 +352,10 @@ h2 {
 }
 
 @media (min-width: 62rem) {
+  main {
+    margin: 5em auto 0 auto;
+  }
+
   .mobile-footer-img,
   .tablet-footer-img {
     display: none;
