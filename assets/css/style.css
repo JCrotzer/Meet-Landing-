@@ -275,11 +275,13 @@ h3 {
 }
 
 .download2 {
-  width: 11rem;
+  width: 12rem;
   height: 3.1rem;
   border-radius: 1.56rem;
   border: none;
   background: var(--purple);
+  padding: 0.5em;
+  font-size: 0.8rem;
 }
 
 .version {
