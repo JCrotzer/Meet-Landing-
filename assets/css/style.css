@@ -99,7 +99,7 @@ h1 {
   margin-bottom: 1.2em;
 }
 
-a {
+.btn {
   text-decoration: none;
   color: var(--white);
   font-size: 1rem;
