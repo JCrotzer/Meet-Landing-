@@ -99,7 +99,7 @@ h1 {
   margin-bottom: 1.2em;
 }
 
-.btn {
+a {
   text-decoration: none;
   color: var(--white);
   font-size: 1rem;
@@ -275,13 +275,11 @@ h3 {
 }
 
 .download2 {
-  width: 12rem;
+  width: 11rem;
   height: 3.1rem;
   border-radius: 1.56rem;
   border: none;
   background: var(--purple);
-  padding: 0.5em;
-  font-size: 0.8rem;
 }
 
 .version {
